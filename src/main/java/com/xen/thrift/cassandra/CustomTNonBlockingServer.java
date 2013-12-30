@@ -30,9 +30,9 @@ public class CustomTNonBlockingServer  extends TNonblockingServer
     {
         System.out.println("into requestInvoke");
 
-//        TNonblockingSocket socket = (TNonblockingSocket) ((CustomFrameBuffer)frameBuffer).getTransport();
+        //TNonblockingSocket socket = (TNonblockingSocket) ((CustomFrameBuffer)frameBuffer).getTransport();
         // session start
-//        System.out.println(socket.getSocketChannel().socket().getRemoteSocketAddress());
+        //        System.out.println(socket.getSocketChannel().socket().getRemoteSocketAddress());
         frameBuffer.invoke();
         return true;
     }

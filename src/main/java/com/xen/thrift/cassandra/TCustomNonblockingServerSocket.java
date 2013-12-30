@@ -38,7 +38,8 @@ public class TCustomNonblockingServerSocket  extends TNonblockingServerSocket {
         if (tsocket == null || tsocket.getSocketChannel() == null)
             return tsocket;
         Socket socket = tsocket.getSocketChannel().socket();
-        System.out.println("acceptImpl link");
+        System.out.println("acceptImpl link"+socket.getRemoteSocketAddress().toString());
+
         try
         {
             socket.setKeepAlive(this.keepAlive);
